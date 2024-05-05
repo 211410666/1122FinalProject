@@ -20,7 +20,7 @@ const Navbar_66 = () => {
         >
           <div className="header-left">
             <div className="logo">
-              <img src="../../public/images/IMG_8155.PNG" alt="" />
+              <img src="/images/IMG_8155.PNG" alt="" />
             </div>
           </div>
           <div className="header-right">
