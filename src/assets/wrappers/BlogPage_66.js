@@ -23,14 +23,14 @@ const Wrapper = styled.div`
     display: flex;
   }
   .block_q{
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     background-color: red;
     border:black 1px solid;
   }
   .block_n{
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     background-color: white;
     border:black 1px solid;
   }
@@ -51,6 +51,49 @@ const Wrapper = styled.div`
   .twocol{
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  .signin-section{
+    position: absolute;
+    top: 15vh;
+    width: 70%;
+    background-color: black;
+    opacity: 1;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+      Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+      sans-serif;
+    color: #ffffff;
+    min-height: 65vh;
+    max-height: 65vh;
+    margin: 10vh 15vw;
+    border: 2px wheat dotted;
+    border-radius: 1rem;
+  }
+  .userunput-title h3{
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 800;
+  }
+  
+  .signinInput{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .signinInput input{
+    height: 100%;
+    font-size: 1.5rem;
+  }
+  .signin-section .section-title h2{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1rem;
+  }
+  .signin-section .section-title h3{
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
   }
   .img {
     width: 100%;
@@ -152,16 +195,6 @@ const Wrapper = styled.div`
     letter-spacing: 1px;
   }
 
-  .blog-content .footer {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .blog-content .btns {
-    display: flex;
-    justify-content: space-around;
-    gap: 5px;
-  }
 
   .btn {
     cursor: pointer;
@@ -182,64 +215,12 @@ const Wrapper = styled.div`
     box-shadow: var(--shadow-3);
     font-weight: 800;
   }
+  #radio input[type="radio"] {display: none; }
+  #radio input:checked + .button {background: #5e7380; color: #fff; cursor: default; }
+  #radio .button {display: inline-block; margin-right:1rem; padding: 10px 15px; background: #f7f7f7; color: #333; cursor: pointer; }
+  #radio .button:hover {background: #bbb; color: #fff; }
+  #radio .round {border-radius: 5px; }
 
-  .blogs-footer-btns {
-    margin: 3rem auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-  }
-
-  .btn-add {
-    padding: 0.5rem 1.2rem;
-    font-size: 1.2rem;
-    color: purple;
-    background-color: lightskyblue;
-  }
-
-  .clear-all {
-    padding: 0.5rem 1.2rem;
-    font-size: 1.2rem;
-    color: red;
-    background-color: pink;
-  }
-
-  .load-all {
-    padding: 0.5rem 1.2rem;
-    font-size: 1.2rem;
-    color: blue;
-    background-color: lightblue;
-  }
-
-  @media screen and (min-width: 550px) {
-    .blogs-center {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  @media screen and (min-width: 800px) {
-    .blogs-center {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-
-  @media screen and (min-width: 992px) {
-    .blogs-center {
-      grid-template-columns: repeat(4, 1fr);
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    .blogs-center {
-      grid-template-columns: repeat(5, 1fr);
-    }
-  }
-  @media screen and (min-width: 1400px) {
-    .blogs-center {
-      grid-template-columns: repeat(6, 1fr);
-    }
-  }
 `;
 
 export default Wrapper;

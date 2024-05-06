@@ -3,7 +3,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 
 import{HomeLayout_66,HomePage_66} from './pages'
-import{DataStructPrefix,DataStructPostfix,NQueenQuestion,DataStructInfix} from './pages/datastruct'
+import{DataStructPrefix,DataStructPostfix,NQueenQuestion,DataStructInfix,Signin} from './pages'
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -36,6 +36,10 @@ const router = createBrowserRouter([
       {
         path:'datastructInfix',
         element:<DataStructInfix/>
+      },
+      {
+        path:'signin',
+        element:<Signin/>
       },
     ],
   }

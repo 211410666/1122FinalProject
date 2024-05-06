@@ -11,8 +11,7 @@ html {
 } /*16px*/
 
 :root {
-  background-image: url('../../../public/images/background.jpg');
-  background-size: cover;
+  background-color: black;
   /* colors */
   --primary-100: #e2e0ff;
   --primary-200: #c1beff;
